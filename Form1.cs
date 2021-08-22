@@ -56,6 +56,18 @@ namespace CalculoMedia
             media = (n1 + n2 + n3) / 3;
             txtMedia.Text = media.ToString();
 
+            if(media < 5)
+            {
+                MessageBox.Show("Aluno foi reprovado!");
+            }
+            else if (media >= 7)
+            {
+                MessageBox.Show("Aluno foi aprovado.");
+            }
+            else
+            {
+                MessageBox.Show("Aluno em recuperação");
+            }
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
